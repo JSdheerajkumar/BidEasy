@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BidEasy</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">User name</string>
+    <string name="welcome" />
+    <string name="auction_system" />
+    <string name="new_user" />
+    <string name="lb_fullname" />
+    <string name="hint_fullname" />
+    <string name="lb_email" />
+    <string name="hint_email" />
+    <string name="lb_username" />
+    <string name="hint_username" />
+    <string name="lb_password" />
+    <string name="hint_password" />
+    <string name="cancel" />
+    <string name="register" />
+</resources>

@@ -1,2 +1,2 @@
-rootProject.name='BidEasy'
 include ':app'
+rootProject.name = "Auction"

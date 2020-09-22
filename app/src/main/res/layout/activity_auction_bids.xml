@@ -21,6 +21,7 @@
         android:id="@+id/listAuctionBids"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/custom_toolbar" />
+        android:layout_below="@id/custom_toolbar"
+        android:background="#95C6F6" />
 
 </RelativeLayout>

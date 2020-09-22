@@ -2,47 +2,51 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true" >
+    android:background="@drawable/back"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp" >
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/Title"
+                android:id="@+id/etTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="@android:color/holo_blue_light"
+                android:background="@drawable/bg_edittext_default"
                 android:hint="Title"
                 android:inputType="text"
                 android:maxLength="50"
                 android:maxLines="1"
-                android:textColor="@android:color/primary_text_light_nodisable"
-                android:textColorHint="@android:color/background_dark"
-                android:textSize="17sp" />
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="17sp">
+
+                <requestFocus />
+            </EditText>
 
             <ImageButton
                 android:id="@+id/ibTakePhoto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_launcher_background"
+                android:background="@drawable/bg_edittext_default"
                 android:scaleType="fitCenter"
-                android:src="@android:drawable/ic_menu_camera" />
+                android:src="@drawable/ic_new_picture" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/ivItem"
@@ -57,98 +61,100 @@
             android:id="@+id/etDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@android:color/holo_blue_light"
-            android:hint="Description"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext_default"
+            android:hint="@string/hint_description"
             android:inputType="text"
             android:maxLength="255"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/background_dark"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:textSize="17sp" />
 
         <EditText
             android:id="@+id/etBasePrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@android:color/holo_blue_light"
-            android:hint="Base Price"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext_default"
+            android:hint="@string/hint_base_price"
             android:inputType="numberDecimal"
             android:maxLines="1"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/background_dark"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext_default"
             android:paddingLeft="4dp"
-            android:text="Bid Starts At"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@android:color/background_dark"
-            android:textSize="18sp" />
+            android:text="@string/hint_bid_starts"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/etBidStartsAtDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="6dp"
+                android:layout_marginRight="4dp"
                 android:layout_weight="1"
-                android:background="@android:color/holo_blue_light"
+                android:background="@drawable/bg_edittext_default"
                 android:focusable="false"
-                android:hint="Start Date"
+                android:hint="@string/hint_bid_starts_on1"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/etBidStartsAtTime"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
+                android:layout_marginLeft="4dp"
                 android:layout_weight="1"
-                android:background="@android:color/holo_blue_light"
+                android:background="@drawable/bg_edittext_default"
                 android:focusable="false"
-                android:hint="Start Time"
+                android:hint="@string/hint_bid_starts_on2"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="17sp" />
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext_default"
             android:paddingLeft="4dp"
-            android:text="Bid Closes In"
-            android:textColor="@android:color/background_dark"
+            android:text="@string/lb_bid_closes_in"
+            android:textColor="@android:color/background_light"
             android:textColorHint="@android:color/background_dark"
-            android:textSize="18sp" />
+            android:textSize="15sp" />
 
         <Spinner
             android:id="@+id/spBidClosing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="Bid Closing"/>
+            android:entries="@array/bid_closing" />
 
         <Button
-            android:id="@+id/SubmitAuction"
+            android:id="@+id/btnSubmitAuction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:text="Create Auction"
-            android:textColorHint="@android:color/background_dark" />
+            android:background="@android:color/background_dark"
+            android:text="@string/btn_create_auction"
+            android:textColor="@android:color/background_light" />
     </LinearLayout>
 
 </ScrollView>
